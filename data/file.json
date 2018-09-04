@@ -13,10 +13,5 @@
     "name": "Anima",
     "id": 52,
     "address": { "city": "Delhi", "country": "India" }
-  },
-  {
-    "name": "AAisha",
-    "id": 52,
-    "address": { "city": "Delhi", "country": "India" }
   }
 ]
