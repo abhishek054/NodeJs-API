@@ -1,0 +1,22 @@
+[
+  {
+    "userName": "Abhishek",
+    "password": "Abhishek",
+    "isLoggedIn": false
+  },
+  {
+    "userName": "Aniket",
+    "password": "Aniket54",
+    "isLoggedIn": false
+  },
+  {
+    "userName": "Aman",
+    "password": "#123Aman",
+    "isLoggedIn": false
+  },
+  {
+    "userName": "Ashish",
+    "password": "aaaaa",
+    "isLoggedIn": false
+  }
+]
