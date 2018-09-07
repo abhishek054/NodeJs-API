@@ -3,12 +3,30 @@
     "name": "Abhishek",
     "email": "abhishek@gmail.com",
     "password": "abhishek",
-    "notes": []
+    "notes": [
+      {
+        "date": "Fri Sep 07 2018 22:00:10 GMT+0530 (India Standard Time)",
+        "note": "My first Note"
+      },
+      {
+        "date": "Fri Sep 07 2018 22:01:08 GMT+0530 (India Standard Time)",
+        "note": "My second Note"
+      },
+      {
+        "date": "2018-09-07T19:36:44.232Z",
+        "note": "this is cool"
+      }
+    ]
   },
   {
     "name": "rgvfdvg",
     "email": "a@a",
     "password": "a",
-    "notes": []
+    "notes": [
+      {
+        "date": "2018-09-07T19:32:08.988Z",
+        "note": "This is my first note"
+      }
+    ]
   }
 ]
