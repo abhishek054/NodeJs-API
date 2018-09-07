@@ -2,21 +2,21 @@
   {
     "userName": "Abhishek",
     "password": "Abhishek",
-    "isLoggedIn": false
+    "notes": []
   },
   {
     "userName": "Aniket",
     "password": "Aniket54",
-    "isLoggedIn": false
+    "notes": []
   },
   {
     "userName": "Aman",
     "password": "#123Aman",
-    "isLoggedIn": false
+    "notes": []
   },
   {
     "userName": "Ashish",
     "password": "aaaaa",
-    "isLoggedIn": false
+    "notes": []
   }
 ]

@@ -4,9 +4,10 @@ var fs = require("fs");
 var bodyParser = require("body-parser");
 var jsonParser = bodyParser.json();
 const jwt = require("jsonwebtoken");
+const cors = require("cors");
 
 app.listen(10000);
-
+app.use(cors());
 app.post("/signup", jsonParser, (req, res) => {
   fs.readFile("../data/account.json", "utf8", (err, data) => {
     data = JSON.parse(data);
@@ -17,14 +18,16 @@ app.post("/signup", jsonParser, (req, res) => {
 });
 
 //TO generate a token
-app.post("/generate", (req, res) => {
+app.get("/generate", (req, res) => {
+  //If authorised, send TOKEn
   let user = {
     name: "Anima",
     id: 563
   };
-  jwt.sign(user, "secretkey", { expiresIn: "60s" }, (err, token) => {
-    res.send(token);
+  jwt.sign(user, "secretkey", { expiresIn: "600s" }, (err, token) => {
+    res.send(JSON.stringify(token));
   });
+  //Else send bad response
 });
 
 //Route to protect
