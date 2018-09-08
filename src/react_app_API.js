@@ -78,12 +78,6 @@ app.post("/addNotes", jsonParser, verifyToken, (req, res) => {
 });
 
 //Delete notes
-// app.delete("/deleteNote", verifyToken, (req, res) => {
-//   jwt.verify(req.token, "secretKey", (err, authData) => {
-//     console.log(req.body);
-//     res.send("Deleted");
-//   });
-// });
 
 app.post("/deleteNote", jsonParser, verifyToken, (req, res) => {
   jwt.verify(req.token, "secretKey", (err, authData) => {
