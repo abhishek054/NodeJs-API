@@ -32,15 +32,13 @@ app.post("/signIn", jsonParser, (req, res) => {
     var tokenUserData;
     var c = false;
     var userName, userMail;
-    userName = data.find(
+    var find = data.find(
       x => x.email == req.body["email"] && x.password == req.body["password"]
-    ).name;
-    userMail = data.find(
-      x => x.email == req.body["email"] && x.password == req.body["password"]
-    ).email;
+    );
+    userName = find.name;
+    userMail = find.email;
     userData = { name: userName };
     tokenUserData = { name: userName, email: userMail };
-    // console.log(userName + userMail);
     if ((userData.name = null)) {
       res.send("Not Found");
     } else {
@@ -78,16 +76,18 @@ app.post("/addNotes", jsonParser, verifyToken, (req, res) => {
 });
 
 //Delete notes
-
 app.post("/deleteNote", jsonParser, verifyToken, (req, res) => {
   jwt.verify(req.token, "secretKey", (err, authData) => {
     fs.readFile("../data/react_app_data.json", "utf8", (err, DATA) => {
       DATA = JSON.parse(DATA);
       var d = DATA.find(x => x.email == authData.email);
-      d.notes.splice(d.notes.indexOf(req.body), 1);
-      // d.notes.splice(d.notes.indexOf(req.body), 1);
-      // DATA.find(x => x.email == authData.email).notes = newNotes;
-      // console.log(DATA);
+      var dd = d.notes;
+      for (let i = 0; i < dd.length; i++) {
+        if (JSON.stringify(dd[i]) == JSON.stringify(req.body)) {
+          dd.splice(i, 1);
+          break;
+        }
+      }
       fs.writeFileSync(
         "../data/react_app_data.json",
         JSON.stringify(DATA, null, 2)

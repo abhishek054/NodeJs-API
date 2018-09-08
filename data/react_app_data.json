@@ -7,21 +7,33 @@
       {
         "date": "2018-09-07T19:32:08.988Z",
         "note": "This is my first note"
+      },
+      {
+        "date": "2018-09-08T15:30:50.934Z",
+        "note": "How about 2nd one ?"
       }
     ]
   },
   {
-    "name": "Abhishek",
+    "name": "Abhishek Bharti",
     "email": "abhishek@gmail.com",
     "password": "abhishek",
     "notes": [
       {
-        "date": "2018-09-08T10:23:13.267Z",
-        "note": "Abhishek"
+        "date": "2018-09-08T12:56:16.640Z",
+        "note": "Attend AWS session tomorrow @12PM"
       },
       {
-        "date": "2018-09-08T10:32:25.551Z",
-        "note": "Nicely done"
+        "date": "2018-09-08T12:59:02.653Z",
+        "note": "Complete Loadash assignment by monday evening"
+      },
+      {
+        "date": "2018-09-08T13:00:28.703Z",
+        "note": "Attend BD conference on 10 Sept"
+      },
+      {
+        "date": "2018-09-08T13:01:54.156Z",
+        "note": "Pay rent for Sept by 11Sept"
       }
     ]
   }
